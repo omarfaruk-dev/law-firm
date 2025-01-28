@@ -18,17 +18,69 @@
                     colors: {
                         clifford: '#da373d',
                         'law-color': '#B68C5A',
+                        'law-dark': '#93734B',
                     }
                 }
             }
         }
     </script>
-     <!-- custom css  -->
-     <link rel="stylesheet" href="styles/style.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="poppins">
-
+    <header class="container mx-auto">
+        <nav class="md:px-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Services</a>
+                                <ul class="p-2">
+                                    <li><a>Services 1</a></li>
+                                    <li><a>Services 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Cases ❯</a></li>
+                            <li><a>Blog ❯</a></li>
+                            <li><a>Contact Us ❯</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-center mx-auto lg:mx-0"><img class="w-3/4 md:w-full " src="images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Services 1</a></li>
+                                    <li><a>Services 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Cases ❯</a></li>
+                        <li><a>Blog ❯</a></li>
+                        <li><a>Contact Us ❯</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class=" btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-law-color text-white font-semibold text-[18px] hover:bg-law-dark">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
